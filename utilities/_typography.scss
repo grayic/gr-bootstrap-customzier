@@ -8,19 +8,19 @@ p {
   $fsz: map-get($map, font-size);
   $lhi: map-get($map, line-height);
   $lspc: map-get($map, letter-spacing);
-  @if $fsz < 16 {
-    .font-size-#{$label}{
-      font-size: $fsz;
-      line-height: $lhi;
-      letter-spacing: $lspc;
-    }
-  } @else {
+  $responsive: map-get($map, responsive);
+ 
+  @if $responsive {
     .font-size-#{$label}{
       @include font-size($fsz);
       line-height: $lhi;
       letter-spacing: $lspc;
+      }
+    } @else {
+      font-size:$fzs;
+      line-height: $lhi;
+      letter-spacing: $lspc;
     }
-  }
   
 }
 

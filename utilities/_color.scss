@@ -1,19 +1,14 @@
 @each $color, $value in $theme-colors{
 
   @each $op-key,$op-value in $gr-opacity{
-    .bg-#{$color}-opacity-#{$op-key}{
+    .bg-#{$color}-op#{$op-key}{
       background-color: rgba($value,$op-value);
-    }
-  }
-  @each $op-key,$op-value in $gr-opacity{
-    .gr-color-#{$color}-opacity-#{$op-key}{
-      color: rgba($value,$op-value);
     }
   }
   
 }
 @each $op-key,$op-value in $gr-opacity{
-  .gr-opacity-#{$op-key}{
+  .opacity-#{$op-key}{
     opacity:$op-value;
   }
 }
