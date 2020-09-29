@@ -11,17 +11,17 @@ p {
   $responsive: map-get($map, responsive);
  
   @if $responsive {
-    .font-size-#{$label}{
-      @include font-size($fsz);
-      line-height: $lhi;
-      letter-spacing: $lspc;
-      }
-    } @else {
       .font-size-#{$label}{
         font-size:$fsz;
         line-height: $lhi;
         letter-spacing: $lspc;
       }
+    } @else {
+      .font-size-#{$label}{
+        @include font-size($fsz);
+        line-height: $lhi;
+        letter-spacing: $lspc;
+        }
     }
   
 }
