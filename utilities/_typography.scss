@@ -17,9 +17,11 @@ p {
       letter-spacing: $lspc;
       }
     } @else {
-      font-size:$fzs;
-      line-height: $lhi;
-      letter-spacing: $lspc;
+      .font-size-#{$label}{
+        font-size:$fsz;
+        line-height: $lhi;
+        letter-spacing: $lspc;
+      }
     }
   
 }
