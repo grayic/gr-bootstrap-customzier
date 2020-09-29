@@ -22,6 +22,10 @@
 } 
 @each $name,$value in $gr-border-width{
   .border-width-#{$name}{
-    border-width: $value;
+    border-width: $value!important;
   }
 } 
+
+.border-solid{
+  border-style: solid;
+}
