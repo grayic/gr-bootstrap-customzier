@@ -8,9 +8,9 @@ p {
   $fsz: map-get($map, font-size);
   $lhi: map-get($map, line-height);
   $lspc: map-get($map, letter-spacing);
-  $responsive: map-get($map, responsive);
+  $not-responsive: map-get($map, not-responsive);
  
-  @if $responsive {
+  @if $not-responsive {
       .font-size-#{$label}{
         font-size:$fsz!important;
         line-height: $lhi!important;
