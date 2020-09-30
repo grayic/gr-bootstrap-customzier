@@ -28,6 +28,16 @@
         left: 0;
         transform: translateY(-50%);
       }
+      @if $key == "center-top"{
+        top:0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @if $key == "center-bottom"{
+        bottom:0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
       @if $key == "center-right"{
         top: 50%;
         right: 0;
