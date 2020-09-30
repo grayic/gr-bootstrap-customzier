@@ -12,9 +12,9 @@ p {
  
   @if $responsive {
       .font-size-#{$label}{
-        font-size:$fsz;
-        line-height: $lhi;
-        letter-spacing: $lspc;
+        font-size:$fsz!important;
+        line-height: $lhi!important;
+        letter-spacing: $lspc!important;
       }
     } @else {
       .font-size-#{$label}{
