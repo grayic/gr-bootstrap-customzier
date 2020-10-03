@@ -1,6 +1,6 @@
 {
   "name": "gr-bootstrap-extender",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "bootstrap utility extender",
   "main": "index.js",
   "scripts": {

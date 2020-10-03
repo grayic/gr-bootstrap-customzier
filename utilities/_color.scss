@@ -3,7 +3,7 @@
     background-color:$value!important;
   }
   .text-#{$color}{
-    background-color:$value!important;
+    color:$value!important;
   }
   @each $op-key,$op-value in $gr-opacity{
     .bg-#{$color}-op#{$op-key}{
