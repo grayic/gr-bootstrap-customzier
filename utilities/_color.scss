@@ -29,3 +29,8 @@
     @include button-outline-variant($value);
   }
 }
+@each $color, $value in $border-colors {
+  .border-#{$color}{
+    border-color:$value!important;
+  }
+}
