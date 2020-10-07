@@ -41,7 +41,7 @@
       @if $key == "center-right"{
         top: 50%;
         right: 0;
-        transform: translate(-50%);
+        transform: translateY(-50%);
       }
     }
   }
